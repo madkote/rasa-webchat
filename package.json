@@ -9,8 +9,10 @@
   "scripts": {
     "build": "webpack-cli --config webpack.prod.js",
     "dev": "webpack-dev-server --config webpack.dev.js",
+    "prod": "webpack-dev-server --config webpack.prod.js",
     "test": "jest --coverage",
-    "prepare": "npm run test && npm run build"
+    "prepare": "npm run test && npm run build",
+    "start": "node lib/index.js"
   },
   "keywords": [
     "react",
@@ -26,9 +28,7 @@
     "redux": "^3.7.2",
     "prop-types": "^15.6.2",
     "socket.io": "^2.1.1",
-    "uniqueid": "^1.0.0"
-  },
-  "devDependencies": {
+    "uniqueid": "^1.0.0",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.2",
     "babel-jest": "^19.0.0",
